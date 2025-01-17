@@ -1,5 +1,5 @@
 # Use a base image with JDK and Ant
-FROM openjdk:11-jdk-slim
+FROM openjdk:8-jdk-slim
 
 # Install a specific version of Ant
 RUN apt-get update && apt-get install -y ant && rm -rf /var/lib/apt/lists/*
