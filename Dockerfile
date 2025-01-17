@@ -2,7 +2,7 @@
 FROM openjdk:11-jdk-slim
 
 # Install a specific version of Ant
-RUN apt-get update && apt-get install -y ant=1.10.12-1 && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y ant && rm -rf /var/lib/apt/lists/*
 
 # Set environment variables
 ENV YAWL_HOME=/opt/yawl
